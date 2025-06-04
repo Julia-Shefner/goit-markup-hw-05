@@ -42,7 +42,7 @@ form {
 
 /* **==BUTTON==** */
 
-.hero-button {
+.btn {
   cursor: pointer;
   background-color: #4d5ae5;
   color: #ffffff;
@@ -52,14 +52,18 @@ form {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.04em;
   display: block;
+  border-radius: 4px;
+  border: none;
+  margin: 0 auto;
+  text-align: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-button {
   min-width: 169px;
   height: 56px;
-  border-radius: 4px;
   padding: 16px 32px;
-  border: none;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  margin: 0 auto;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -75,23 +79,9 @@ form {
 }
 
 .footer-btn {
-  cursor: pointer;
-  background-color: #4d5ae5;
-  color: #ffffff;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.04em;
-  display: block;
-  border-radius: 4px;
   padding: 8px 24px;
   min-width: 165px;
   height: 40px;
-  border: none;
-  margin: 0 auto;
-  text-align: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-bnt-content {
@@ -102,24 +92,10 @@ form {
 }
 
 .modal-btn {
-  cursor: pointer;
-  background-color: #4d5ae5;
-  color: #ffffff;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.04em;
-  display: block;
-  border-radius: 4px;
   padding: 16px 32px;
   min-width: 169px;
   height: 56px;
-  border: none;
-  margin: 0 auto;
-  text-align: center;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* **==CONTAINER==** */
@@ -578,7 +554,7 @@ form {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  outline: none;
+  outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -698,6 +674,10 @@ form {
   background-color: #fff;
   font-family: "Roboto" sans-serif;
   color: #2e2f42;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 }
 
 .modal-input {
@@ -743,5 +723,39 @@ form {
   resize: none;
   height: 120px;
   padding: 8px 16px;
-  outline: none;
+  outline: transparent;
+}
+
+.check-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.modal-link {
+  line-height: 1.33333;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+}
+
+.check-custom {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  margin-right: 8px;
+  margin-bottom: 24px;
+  fill: transparent;
+}
+
+.check-input:checked + .check-text .check-custom {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
